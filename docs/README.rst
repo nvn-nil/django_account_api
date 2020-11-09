@@ -8,8 +8,8 @@ A more detailed documentation will live in this folder. For now read the followi
 Django Accounts API
 ===================
 
-This is a Django app to enable toke authentication end-points for a django project. This app would expose
-rest api endpoints for login, logout and registering a user.
+This is a Django app to enable token authentication end-points for a django project. This app would expose
+rest api endpoints for user registration, login, logout and to query for user information.
 
 Was a part of a higher django-react application and separated out for code reuse and to help user bootstrap
 and impement auth as an extension.
@@ -39,6 +39,11 @@ Quick start
     path('', include('accounts.urls')),
     path('api', include('other_api.urls')),
 
+3. Add default authentication classes to REST_FRAMEWORK setting to settings.py file::
+
+    REST_FRAMEWORK = {
+        'DEFAULT_AUTHENTICATION_CLASSES': ('knox.auth.TokenAuthentication',)
+    }
 
 3. Run ``python manage.py migrate`` to create the accounts models and knox migrations (for tokens, etc).
 

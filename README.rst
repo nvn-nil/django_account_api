@@ -2,8 +2,8 @@
 Django Accounts API
 ===================
 
-This is a Django app to enable toke authentication end-points for a django project. This app would expose
-rest api endpoints for login, logout and registering a user.
+This is a Django app to enable token authentication end-points for a django project. This app would expose
+rest api endpoints for user registration, login, logout and to query for user information.
 
 Was a part of a higher django-react application and separated out for code reuse and to help user bootstrap
 and impement auth as an extension.
