@@ -28,7 +28,7 @@ Quick start
     ...
     path('', include('another.urls')),
 
-    note: accounts urls are internally prefixed with 'api', keep this line above your other 'api' paths
+note: accounts urls are internally prefixed with 'api', keep this line above your other 'api' paths
     
     ...
     path('', include('accounts.urls')),
@@ -40,32 +40,6 @@ Quick start
 
 4. Start the development server and now you can access the account endpoints.
 
-    User register
-    
-
-    User register
-    url: http://localhost:8000/api/auth/register
-    method: POST
-    content-type: application/json
-    body:
-    {
-        "username": "userNameHere",
-        "first_name": "Brad",
-        "last_name": "NoChad",
-        "email": "brad@chad.com",
-        "password": "superstrongpassword"
-    }
-
-    Response (json)
-    body:
-    {
-        "user": {
-            "id": 1,
-            "username": "userNameHere",
-            "email": "brad@chad.com"
-        },
-        "token": "bc1aksjna2fba56be605d324a59f531c47dcoij3bcc162aksjdaskdljalskd48"
-    }
 
 =====
 API
