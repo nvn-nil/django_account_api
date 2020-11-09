@@ -33,6 +33,11 @@ Quick start
     path('', include('accounts.urls')),
     path('api', include('other_api.urls')),
 
+3. Add default authentication classes to REST_FRAMEWORK setting to settings.py file::
+
+    REST_FRAMEWORK = {
+        'DEFAULT_AUTHENTICATION_CLASSES': ('knox.auth.TokenAuthentication',)
+    }
 
 3. Run ``python manage.py migrate`` to create the accounts models and knox migrations (for tokens, etc).
 
