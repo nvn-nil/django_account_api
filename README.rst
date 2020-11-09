@@ -45,20 +45,23 @@ User register
 -----------
 
 Request
+-------
 
-url: /api/auth/register
-method: POST
-content-type: application/json
-body:
-{
-    "username": "userNameHere",
-    "first_name": "Brad",
-    "last_name": "NoChad",
-    "email": "brad@chad.com",
-    "password": "superstrongpassword"
-}
+| url: /api/auth/register
+| method: POST
+| content-type: application/json
+| body:
+
+    {
+        "username": "userNameHere",
+        "first_name": "Brad",
+        "last_name": "NoChad",
+        "email": "brad@chad.com",
+        "password": "superstrongpassword"
+    }
 
 Response
+--------
 
 content-type: application/json
 body:
