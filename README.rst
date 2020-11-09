@@ -24,17 +24,13 @@ Quick start
 2. Include the accounts URLconf in your project urls.py like this::
 
     path('board', include('board.urls')),
-    *path('', include('accounts.urls')),*
-    ...
+    path('', include('accounts.urls')),
     path('', include('another.urls')),
 
 note: accounts urls are internally prefixed with 'api', keep this line above your other 'api' paths
     
-    ...
     path('', include('accounts.urls')),
     path('api', include('other_api.urls')),
-    ...
-
 
 3. Run ``python manage.py migrate`` to create the accounts models and knox migrations (for tokens, etc).
 
