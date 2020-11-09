@@ -9,7 +9,7 @@ with open("LICENSE") as f:
 setup(
     name="django_account_api",
     version="0.0.1",
-    install_requires=["django>=3", "djangorestframework", "django-rest-knox", "tabulate"],
+    install_requires=["django>=3", "djangorestframework", "django-rest-knox"],
     url="https://www.github.com/nvn-nil/django_account_api",
     license="MIT",
     author="@nvn-nil",
@@ -18,5 +18,4 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     python_requires=">=3.6",
-    keywords=["wind", "turbine", "power", "curve"],
 )
